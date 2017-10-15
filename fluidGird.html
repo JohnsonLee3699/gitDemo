@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        
+        .circle{
+/*          (100 - (margin(%) * div * 2) ) / div */
+            width: 14.6666667%;
+            height: 150px;
+            margin: 1%;
+            border-radius: 50%;
+            background-color: #00e3af;
+            float: left;
+/*
+            display: inline-block;
+            inline-block 之間會有奸細
+*/    
+        }
+        
+        @media screen and (max-width: 600px){
+            .circle{
+                width: 31.3333333%;
+                margin: 1%;
+            }
+        }
+/*
+        .content{
+            text-align: center;
+            line-height: 200px;
+            color: darkorchid;
+        }
+*/
+        .clear{
+            clear: both;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    
+    <div class="clear"></div>
+</body>
+</html>
